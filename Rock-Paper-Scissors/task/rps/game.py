@@ -17,6 +17,7 @@ file_rat = open("rating.txt", "r")
 for line in file_rat:
     player, score = line.split()
     scores[player] = int(score)
+file_rat.close()
 
 name = input("Enter your name: ")
 print(f"Hello, {name}")
